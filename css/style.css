@@ -1,0 +1,161 @@
+@import url(variables.css);
+
+.container {
+    width: min(100%, 1440px);
+    margin: auto;
+    display: grid;
+    padding: 32px 20px;
+    background-color: var(--mainColor);
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 48px repeat(2, 146px) 284px;
+    gap: 48px 40px;
+    grid-template-areas:
+        "HEADER HEADER HEADER HEADER"
+        "aside1 section_1 section_1 section_2 "
+        "aside1 section_1 section_1 section_3"
+        "card_1 card_2 card_3 card_4"
+    ;
+}
+
+/* header */
+header {
+    grid-area: HEADER;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+ul {
+    display: flex;
+    column-gap: 84px;
+}
+
+.header_div {
+    display: flex;
+    column-gap: 32px;
+    align-items: center;
+}
+
+li a {
+    font-family: Inter;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 21.78px;
+    color: #DFD9D9;
+}
+
+/* section */
+/* aside */
+aside {
+    grid-area: aside1;
+    background-color: #000000 20% #000000;
+    padding: 38px 40px;
+
+}
+
+.aside_div {
+    display: flex;
+    flex-direction: column;
+    column-gap: 18px;
+
+}
+
+.aside_h2 {
+
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 27px;
+    color: #C3B97F;
+    margin-bottom: 18px;
+
+}
+
+.aside_p {
+
+    font-family: Inter;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 25px;
+    color: #91B599;
+}
+
+/* section1 */
+.section_1 {
+    grid-area: section_1;
+}
+
+.section_2 {
+    grid-area: section_2;
+}
+
+.section_3 {
+    grid-area: section_3;
+}
+
+/* cards */
+.img_div {
+    background-image: url(../images/Rectangle\ 15\ \(1\).png);
+    height: 180px;
+    background-repeat: no-repeat;
+}
+
+.card_1 {
+    grid-area: card_1;
+}
+
+.card_2 {
+    grid-area: card_2;
+}
+
+.card_3 {
+    grid-area: card_3;
+}
+
+.card_4 {
+    grid-area: card_4;
+}
+
+.figure_text {
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    color: #DFD9D9;
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+.card_div2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #DFD9D9;
+}
+
+.figure_button {
+    Width: 97px;
+    Height: 40px;
+    background-color: #C3B97F;
+    color: #DFD9D9;
+    border: none;
+
+}
+
+.price {
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    color: var(--mainColor);
+    padding-left: 8px;
+}
+
+h3 {
+    font-family: Inter;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 32px;
+    color: var(--mainColor);
+    margin: 8px 0 0 8px;
+}
